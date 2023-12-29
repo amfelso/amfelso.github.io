@@ -1,10 +1,11 @@
 import React from 'react';
+import { Routes, Route } from "react-router-dom"
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import CustomToolbar from './components/CustomToolbar.js'
-import Banner from './components/Banner.js'
-import ProjectGrid from './components/ProjectGrid.js';
+import Home from './pages/Home.js';
+import Error from './pages/Error.js';
 
 const styles = theme => ({
   layout: {
@@ -27,10 +28,10 @@ function App(props) {
       <CssBaseline />
       <div className={classes.layout}>
         <CustomToolbar />
-        <main>
-          <Banner />
-          <ProjectGrid />
-        </main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
       </div>
     </React.Fragment>
   );

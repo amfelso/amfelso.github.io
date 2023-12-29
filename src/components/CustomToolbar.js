@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
+import HomeIcon from '@mui/icons-material/Home';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import { GitHub, LinkedIn } from '@material-ui/icons';
 
@@ -16,6 +18,9 @@ function CustomToolbar(props) {
 
     return (
         <Toolbar className={classes.toolbarMain}>
+            <IconButton component={Link} to="/">
+                <HomeIcon />
+            </IconButton>
             <IconButton onClick={() => window.open('https://github.com/amfelso', '_blank')}>
                 <GitHub />
             </IconButton>
