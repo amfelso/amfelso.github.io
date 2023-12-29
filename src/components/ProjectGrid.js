@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
@@ -14,40 +14,45 @@ const styles = theme => ({
     },
     card: {
         display: 'flex',
+        "&:hover": {
+            background: theme.palette.grey[100],
+            cursor: "pointer"
+          },
     },
     cardDetails: {
         flex: 1,
     },
     cardMedia: {
-        width: 120,
+        width: 180,
     },
 });
 
 const projects = [
     {
-        title: 'New project',
+        title: 'Web Chat App',
         id: 'e05801f6-ee2d-4994-ba9e-5182c139acf3',
-        date: 'Jan 2024',
+        date: 'Jul 2021',
         description:
-            'Please check back soon for new and exciting development work.',
+            'Web chat application using React & Firebase.',
     },
     {
-        title: 'New project',
+        title: 'Cloud ETL Pipeline',
         id: 'fd7bb2ed-6fa7-459d-975e-07cf75cc6342',
-        date: 'Jan 2024',
+        date: 'Dec 2022',
         description:
-            'Please check back soon for new and exciting development work.',
+            'An ETL pipeline to process events from worldwide news sources.',
     },
 ];
 
 function ProjectGrid(props) {
     const { classes } = props;
+    const navigate = useNavigate();
 
     return (
         <Grid container spacing={4}>
             {projects.map(project => (
                 <Grid item key={project.title} xs={12} md={6}>
-                    <Card className={classes.card}>
+                    <Card className={classes.card} onClick={()=>navigate(`/project/${project.id}`)}>
                         <div className={classes.cardDetails}>
                             <CardContent>
                                 <Typography component="h2" variant="h5">
@@ -58,11 +63,6 @@ function ProjectGrid(props) {
                                 </Typography>
                                 <Typography variant="subtitle1" paragraph>
                                     {project.description}
-                                </Typography>
-                                <Typography variant="subtitle1" color="primary">
-                                    <Link to={`/project/${project.id}`} underline="none">
-                                        Learn more...
-                                    </Link>
                                 </Typography>
                             </CardContent>
                         </div>

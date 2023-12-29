@@ -19,19 +19,23 @@ const styles = theme => ({
 });
 
 function Banner(props) {
-  const { classes } = props;
+  const { classes, hidden } = props;
 
   return (
     <Paper className={classes.mainFeaturedPost}>
       <Grid container>
         <Grid item md={6}>
           <div className={classes.mainFeaturedPostContent}>
-            <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-              August Felso
-            </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
-              Software developer, data engineer, cloud architect.
-            </Typography>
+            {hidden ? '' :
+              <>
+                <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+                  Hi, I'm August.
+                </Typography>
+                <Typography variant="h5" color="inherit" paragraph>
+                  I'm a software developer specialized in data engineering, backend integration, and cloud architecture.
+                </Typography>
+              </>
+            }
           </div>
         </Grid>
       </Grid>

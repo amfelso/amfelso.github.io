@@ -6,7 +6,7 @@ function Error(props) {
 
   return (
         <main>
-          <Banner />
+          <Banner hidden={false}/>
           <Typography align='center'>
               Sorry, this page doesn't exist.
           </Typography>

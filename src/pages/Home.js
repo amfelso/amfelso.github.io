@@ -6,7 +6,7 @@ function Home(props) {
   
   return (
         <main>
-          <Banner />
+          <Banner hidden={false}/>
           <ProjectGrid />
         </main>
   );
