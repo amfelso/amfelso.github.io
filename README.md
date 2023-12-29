@@ -5,7 +5,7 @@ This simple React website is designed to serve as a project portfolio.
 
 Specifically:
 * To provide a custom space to showcase more details about my personal projects.
-* To demonstrate how the backend services I've designed can integrate with a user interface.
+* To demonstrate how the backend services I've created can integrate with a user interface.
 
 ### Built With
 
