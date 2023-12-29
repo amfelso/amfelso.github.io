@@ -15,7 +15,7 @@ const projects =
     id: 'e05801f6-ee2d-4994-ba9e-5182c139acf3',
     date: 'Jul 2021',
     description: 'Web chat application using React & Firebase.',
-    details: 'This real time web chat application is a personal project to explore advanced features of React & Firebase.\nSpecifically:\n- To structure a larger React project with many components.\n- To offer OAuth using Firebase.\n- To manage data using both Firebase storage and Realtime DB.\n- To explore Firebase cloud functions.',
+    details: 'This real time web chat application is a personal project to explore advanced features of React & Firebase.\n\nSpecifically:\n- To structure a larger React project with many components.\n- To offer OAuth using Firebase.\n- To manage data using both Firebase storage and Realtime DB.\n- To explore Firebase cloud functions.',
     github: 'https://github.com/amfelso/web-chat-app',
     demo: 'https://chat-app-7c117.web.app/'
   },
@@ -25,7 +25,7 @@ const projects =
     id: 'fd7bb2ed-6fa7-459d-975e-07cf75cc6342',
     date: 'Dec 2022',
     description: 'An ETL pipeline to process events from worldwide news sources.',
-    details: 'This project is an ETL pipeline for the GDELT 2.0 Events Database, a dataset compiling events from worldwide news sources with an interesting variety of extracted fields. The general purpose is to prepare and load this data for meaningful human analysis.\nMy specific objectives in this project:\n- To gain experience with AWS Glue, a fully managed cloud ETL service.\n- To model data in a real world context.\n- To architect and orchestrate a big data ingestion using services common in the industry.\n- To improve skill with AWS relational solutions such as RDS & Redshift.\n- To understand the benefits of data lakes vs databases vs data warehouses in practice.',
+    details: 'This project is an ETL pipeline for the GDELT 2.0 Events Database, a dataset compiling events from worldwide news sources with an interesting variety of extracted fields. The general purpose is to prepare and load this data for meaningful human analysis.\n\nMy specific objectives in this project:\n- To gain experience with AWS Glue, a fully managed cloud ETL service.\n- To model data in a real world context.\n- To architect and orchestrate a big data ingestion using services common in the industry.\n- To improve skill with AWS relational solutions such as RDS & Redshift.\n- To understand the benefits of data lakes vs databases vs data warehouses in practice.',
     github: 'https://github.com/amfelso/gdelt-etl-aws',
     demo: ''
   }
