@@ -10,7 +10,7 @@ Specifically:
 ### Built With
 
 * [React.js](https://reactjs.org/)
-* [Material UI](https://mui.com/material-ui/))
+* [Material UI](https://mui.com/material-ui/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
