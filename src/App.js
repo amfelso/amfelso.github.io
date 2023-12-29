@@ -6,6 +6,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import CustomToolbar from './components/CustomToolbar.js'
 import Home from './pages/Home.js';
 import Error from './pages/Error.js';
+import ProjectDetails from './pages/ProjectDetails.js';
 
 const styles = theme => ({
   layout: {
@@ -30,6 +31,7 @@ function App(props) {
         <CustomToolbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/project/:id" element={<ProjectDetails />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </div>

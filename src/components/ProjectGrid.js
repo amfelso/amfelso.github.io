@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
@@ -25,12 +26,14 @@ const styles = theme => ({
 const projects = [
     {
         title: 'New project',
+        id: 'e05801f6-ee2d-4994-ba9e-5182c139acf3',
         date: 'Jan 2024',
         description:
             'Please check back soon for new and exciting development work.',
     },
     {
         title: 'New project',
+        id: 'fd7bb2ed-6fa7-459d-975e-07cf75cc6342',
         date: 'Jan 2024',
         description:
             'Please check back soon for new and exciting development work.',
@@ -57,7 +60,9 @@ function ProjectGrid(props) {
                                     {project.description}
                                 </Typography>
                                 <Typography variant="subtitle1" color="primary">
-                                    Learn more...
+                                    <Link to={`/project/${project.id}`} underline="none">
+                                        Learn more...
+                                    </Link>
                                 </Typography>
                             </CardContent>
                         </div>
