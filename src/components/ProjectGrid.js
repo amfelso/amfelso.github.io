@@ -14,7 +14,7 @@ const styles = theme => ({
     },
     card: {
         display: 'flex',
-        height: '180px',
+        height: '230px',
         "&:hover": {
             background: theme.palette.grey[100],
             cursor: "pointer"
@@ -30,17 +30,29 @@ const styles = theme => ({
 
 const projects = [
     {
-        title: 'Web Chat App',
+        title: 'Realtime Web Chat App',
         id: 'e05801f6-ee2d-4994-ba9e-5182c139acf3',
         date: 'Jul 2021',
-        description: 'Web chat application using React & Firebase.',
+        description: 'Designed and implemented a realtime chat application using React for the frontend and Firebase for backend integration. Ensured seamless communication and scalability, supporting concurrent users efficiently.',
+        technologies: ['React', 'Firebase', 'WebSockets'],
+        highlights: [
+            'Built a responsive and intuitive user interface with React.',
+            'Implemented real-time message delivery and notifications.',
+            'Optimized Firebase integration for scalable performance.',
+        ],
         image: 'https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png'
     },
     {
         title: 'Cloud ETL Pipeline',
         id: 'fd7bb2ed-6fa7-459d-975e-07cf75cc6342',
         date: 'Dec 2022',
-        description: 'An ETL pipeline to process events from worldwide news sources.',
+        description: 'Developed a cloud-based ETL pipeline to process and analyze global news events in near real-time. Leveraged serverless AWS services for efficient data ingestion, transformation, and storage.',
+        technologies: ['AWS Lambda', 'S3', 'Glue', 'Redshift', 'EventBridge'],
+        highlights: [
+            'Orchestrated data ingestion from diverse global news APIs.',
+            'Enabled real-time analytics with Redshift and Glue.',
+            'Achieved cost efficiency using serverless architecture.',
+        ],
         image: 'https://d1.awsstatic.com/logos/aws-logo-lockups/poweredbyaws/PB_AWS_logo_RGB_stacked_REV_SQ.91cd4af40773cbfbd15577a3c2b8a346fe3e8fa2.png'
     },
 ];

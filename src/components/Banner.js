@@ -29,10 +29,10 @@ function Banner(props) {
             {hidden ? '' :
               <>
                 <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-                  Hi, I'm August.
+                  Hi, I'm August Felso.
                 </Typography>
                 <Typography variant="h5" color="inherit" paragraph>
-                  I'm a software developer specialized in data engineering, backend integration, and cloud architecture.
+                  Tech Lead and software engineer with expertise in cloud architecture, big data, and scalable systems. Passionate about solving real-world challenges and advancing technologies in AI and robotics.
                 </Typography>
               </>
             }
