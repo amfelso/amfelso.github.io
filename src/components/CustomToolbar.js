@@ -27,7 +27,7 @@ function CustomToolbar(props) {
             <IconButton onClick={() => window.open('https://www.linkedin.com/in/augustfelso/', '_blank')}>
                 <LinkedIn />
             </IconButton>
-            <IconButton onClick={() => window.open('https://portfolio-assets-122823.s3.amazonaws.com/Resume12282023.pdf', '_blank')}>
+            <IconButton onClick={() => window.open('https://portfolio-assets-122823.s3.us-east-1.amazonaws.com/Resume12022024.pdf', '_blank')}>
                 <FileDownloadIcon />
             </IconButton>
         </Toolbar>
