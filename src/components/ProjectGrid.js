@@ -14,7 +14,7 @@ const styles = theme => ({
     },
     card: {
         display: 'flex',
-        height: '230px',
+        height: '260px',
         "&:hover": {
             background: theme.palette.grey[100],
             cursor: "pointer"
@@ -30,30 +30,30 @@ const styles = theme => ({
 
 const projects = [
     {
-        title: 'Realtime Web Chat App',
+        title: 'Mars Rover Chatbot',
         id: 'e05801f6-ee2d-4994-ba9e-5182c139acf3',
-        date: 'Jul 2021',
-        description: 'Designed and implemented a realtime chat application using React for the frontend and Firebase for backend integration. Ensured seamless communication and scalability, supporting concurrent users efficiently.',
-        technologies: ['React', 'Firebase', 'WebSockets'],
+        date: 'Dec 2024',
+        description: 'Created an AI-powered chatbot that simulates interactions with the Mars Curiosity Rover. Integrated NASA APIs to retrieve data and provided conversational capabilities for exploring Martian observations and science.',
+        technologies: ['Python', 'OpenAI GPT', 'AWS Lambda', 'React'],
         highlights: [
-            'Built a responsive and intuitive user interface with React.',
-            'Implemented real-time message delivery and notifications.',
-            'Optimized Firebase integration for scalable performance.',
+            'Developed conversational AI for an engaging, Mars-specific chatbot.',
+            'Fetched real-time rover data using NASA APIs.',
+            'Implemented a secure and efficient backend using AWS Lambda.',
         ],
-        image: 'https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png'
+        image: 'https://images.indianexpress.com/2023/06/Curiosity-postcard-featured-20230616.jpg',
     },
     {
-        title: 'Cloud ETL Pipeline',
+        title: 'Mars Image Processing Pipeline',
         id: 'fd7bb2ed-6fa7-459d-975e-07cf75cc6342',
-        date: 'Dec 2022',
-        description: 'Developed a cloud-based ETL pipeline to process and analyze global news events in near real-time. Leveraged serverless AWS services for efficient data ingestion, transformation, and storage.',
-        technologies: ['AWS Lambda', 'S3', 'Glue', 'Redshift', 'EventBridge'],
+        date: 'Dec 2024',
+        description: 'Built a cloud-based ETL pipeline to process Mars rover images and metadata. Designed the pipeline to extract, transform, and analyze rover data, enhancing accessibility for scientific exploration.',
+        technologies: ['AWS Lambda', 'S3', 'Amazon Rekognition', 'Step Functions', 'Pinecone'],
         highlights: [
-            'Orchestrated data ingestion from diverse global news APIs.',
-            'Enabled real-time analytics with Redshift and Glue.',
-            'Achieved cost efficiency using serverless architecture.',
+            'Automated ingestion and transformation of Mars rover images.',
+            'Integrated Amazon Rekognition for image feature extraction.',
+            'Used Pinecone to store and query vector embeddings of image data.',
         ],
-        image: 'https://d1.awsstatic.com/logos/aws-logo-lockups/poweredbyaws/PB_AWS_logo_RGB_stacked_REV_SQ.91cd4af40773cbfbd15577a3c2b8a346fe3e8fa2.png'
+        image: 'https://cff2.earth.com/uploads/2024/05/19091455/scientists-decode-the-carbon-mystery-in-martian-sediments.jpg',
     },
 ];
 

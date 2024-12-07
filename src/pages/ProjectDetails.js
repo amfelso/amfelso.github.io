@@ -6,37 +6,37 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import Banner from '../components/Banner.js';
 
 const projects = {
-  'e05801f6-ee2d-4994-ba9e-5182c139acf3': {
-    title: 'Realtime Web Chat Application',
-    id: 'e05801f6-ee2d-4994-ba9e-5182c139acf3',
-    date: 'Jul 2021',
-    description: 'Built a scalable, real-time chat application to enhance user engagement and explore advanced frontend-backend integrations.',
-    details: `This project showcased the integration of React with Firebase for a seamless chat experience, focusing on frontend design, authentication, and real-time updates.`,
-    objectives: [
-      'Develop a responsive interface using React.',
-      'Implement secure OAuth authentication.',
-      'Enable real-time communication using Firebase Realtime Database.',
-      'Showcase backend scalability with serverless architecture.',
-    ],
-    github: 'https://github.com/amfelso/web-chat-app',
-    demo: 'https://chat-app-7c117.web.app/',
-    image: 'https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png',
-  },
   'fd7bb2ed-6fa7-459d-975e-07cf75cc6342': {
-    title: 'Cloud ETL Pipeline',
+    title: 'Mars Image Processing Pipeline',
     id: 'fd7bb2ed-6fa7-459d-975e-07cf75cc6342',
-    date: 'Dec 2022',
-    description: 'Designed and implemented a cloud-native ETL pipeline to process and analyze large datasets from global news sources.',
-    details: `The project emphasized efficient data ingestion and transformation, leveraging AWS Glue, Lambda, and Redshift for scalable and cost-effective solutions.`,
+    date: 'Dec 2024',
+    description: 'Built a cloud-based ETL pipeline to process and analyze Mars rover images and metadata, enhancing accessibility for scientific exploration.',
+    details: `This project implemented a robust pipeline for automating the ingestion, transformation, and analysis of images captured by the Mars Curiosity Rover. Amazon Rekognition and Pinecone were utilized for feature extraction and vector storage, enabling efficient querying of Mars rover data.`,
     objectives: [
-      'Leverage AWS Glue for orchestrating big data ETL workflows.',
-      'Model and transform global news datasets for meaningful analytics.',
-      'Deploy AWS Redshift for querying large datasets efficiently.',
-      'Compare practical use cases for data lakes, warehouses, and relational databases.',
+      'Automate image ingestion from NASA APIs.',
+      'Transform and extract features using Amazon Rekognition.',
+      'Store vector embeddings in Pinecone for querying.',
+      'Ensure scalability and cost efficiency using AWS Lambda and Step Functions.',
     ],
-    github: 'https://github.com/amfelso/gdelt-etl-aws',
+    github: 'https://github.com/amfelso/curiosity-pipeline',
     demo: '',
-    image: 'https://d1.awsstatic.com/logos/aws-logo-lockups/poweredbyaws/PB_AWS_logo_RGB_stacked_REV_SQ.91cd4af40773cbfbd15577a3c2b8a346fe3e8fa2.png',
+    image: 'https://cff2.earth.com/uploads/2024/05/19091455/scientists-decode-the-carbon-mystery-in-martian-sediments.jpg',
+  },
+  'e05801f6-ee2d-4994-ba9e-5182c139acf3': {
+    title: 'Mars Rover Chatbot',
+    id: '4b9dc5b3-345a-4026-9df7-70d2d6b8c15b',
+    date: 'Dec 2024',
+    description: 'Developed an AI-powered chatbot simulating interactions with the Mars Curiosity Rover, making scientific observations and data accessible through conversational engagement.',
+    details: `The Mars Rover Chatbot uses OpenAI GPT and NASA APIs to create a conversational interface for exploring Mars rover data. This project integrates real-time rover data retrieval and provides users with insights about the Martian surface and scientific discoveries in an interactive manner.`,
+    objectives: [
+      'Build an AI chatbot capable of interpreting Mars rover data.',
+      'Fetch real-time data using NASA APIs.',
+      'Implement secure, serverless architecture with AWS Lambda.',
+      'Provide a user-friendly conversational interface for scientific exploration.',
+    ],
+    github: 'https://github.com/amfelso/rover-chatbot',
+    demo: '',
+    image: 'https://images.indianexpress.com/2023/06/Curiosity-postcard-featured-20230616.jpg',
   },
 };
 
